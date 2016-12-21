@@ -107,6 +107,18 @@ public class ArrayStart {
 		System.out.println();
 		System.out.print("\n");
 
+		System.out.println();
+		System.out.print("\n");
+
+		System.out.println();
+		System.out.print("\n");
+
+		System.out.println();
+		System.out.print("\n");
+
+		System.out.println();
+		System.out.print("\n");
+
 
 
 
