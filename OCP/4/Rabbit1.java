@@ -14,6 +14,6 @@ class Rabbit3 {
 
 
 class Rabbit4 {
-	public Rabbit4() { };
+	private Rabbit4() { };
 }
 
