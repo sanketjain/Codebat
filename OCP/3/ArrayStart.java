@@ -52,15 +52,15 @@ public class ArrayStart {
 		int[] numbers = new int[10];
 		for (int i = 0; i<numbers.length; i++){
 			numbers[i] = i+5;
-			System.out.println(numbers[i]);
-
-		}
+			System.out.print(numbers[i] + " ");
+		}		
+		System.out.println("Length of numbers is " + numbers.length);
 		System.out.print("\n");
 
 		int[] numbers5 = { 3, 63, 23, 763, 25 };
 		Arrays.sort(numbers5);
 		for (int i=0; i<numbers5.length; i++){
-			System.out.println(numbers5[i]);
+			System.out.print(numbers5[i] + " ");
 		}
 		System.out.print("\n");
 
@@ -73,58 +73,13 @@ public class ArrayStart {
 		System.out.println("\n");
 
 		// Binary Search works only if array is already sorted
-		int[] numbers6 = {2, 4, 6, 8};
+		int[] numbers6 = {2, 10, 4, 6, 8};
 		System.out.println(Arrays.binarySearch(numbers6, 2));
 		System.out.println(Arrays.binarySearch(numbers6, 4));
 		System.out.println(Arrays.binarySearch(numbers6, 1));
 		System.out.println(Arrays.binarySearch(numbers6, 3));
 		System.out.println(Arrays.binarySearch(numbers6, 9));
 		System.out.print("\n");
-
-
-		int[][] vars1; //2D array
-		int vars2 [][]; //2D array
-		int[] vars3[]; //2D array
-		int[] vars4 [], space [][]; //2D and 3D array
-		String [][] rectangle = new String [3][2];
-		rectangle[0][1] = "set";
-
-		System.out.println();
-		System.out.print("\n");
-
-		System.out.println();
-		System.out.print("\n");
-
-		System.out.println();
-		System.out.print("\n");
-
-		System.out.println();
-		System.out.print("\n");
-
-		System.out.println();
-		System.out.print("\n");
-
-		System.out.println();
-		System.out.print("\n");
-
-		System.out.println();
-		System.out.print("\n");
-
-		System.out.println();
-		System.out.print("\n");
-
-		System.out.println();
-		System.out.print("\n");
-
-		System.out.println();
-		System.out.print("\n");
-
-
-
-
-
-
-
 
 	}
 }

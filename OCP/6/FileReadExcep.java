@@ -1,3 +1,5 @@
+
+
 public class FileReadExcep {
 	public static void main(String[] args){
 		FileReader reader = null;

@@ -13,7 +13,7 @@ public class StringMethods {
 		System.out.println(string.indexOf('a', 4));
 		System.out.println(string.indexOf("al", 5)); //indexOf() does not throw exception. It returns -1 when match not found 
 //		System.out.println(string.indexOf(0));
-		System.out.print("\n");
+		System.out.println("Substring examples");
 
 		System.out.println(string.substring(3));
 		System.out.println(string.substring(string.indexOf('n')));

@@ -32,7 +32,7 @@ public class StringBuilderStart {
 		//Creating a stringbuilder
 		StringBuilder sb1 = new StringBuilder();
 		StringBuilder sb2 = new StringBuilder("animals");
-		StringBuilder sb3 = new StringBuilder("10");
+		StringBuilder sb3 = new StringBuilder(10);
 		System.out.println(sb1);
 		System.out.println(sb2);
 		System.out.println(sb3);
