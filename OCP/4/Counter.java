@@ -10,6 +10,8 @@ public class Counter{
 		Counter c2 = new Counter();		
 		Counter c3 = new Counter();		
 		System.out.println(count);
+		System.out.println(c1.count);
+		System.out.println(Counter.count);
 //		values.add("changed");
 	}
 }

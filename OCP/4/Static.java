@@ -9,7 +9,7 @@ public class Static{
 	public static void main(String args[]){
 		first();
 		second();
-		third();
+		new Static().third();
 //		System.out.println("Koala count ");
 	}
 }
