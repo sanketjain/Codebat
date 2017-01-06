@@ -1,6 +1,7 @@
 public class PassByValueSB{
 	public static void main(String[] args){
 		StringBuilder name = new StringBuilder();
+		name.append("Webby");
 		speak(name);
 		System.out.println(name);
 	}
