@@ -1,0 +1,1 @@
+interface HasClaws {boolean isSharp();}

@@ -1,0 +1,1 @@
+interface CanClimb {int maxHeight();}
