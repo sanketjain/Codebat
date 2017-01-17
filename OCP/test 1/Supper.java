@@ -1,3 +1,6 @@
+import java.util.*;
+import java.io.*;
+
 class Supper {
 	public static void eat() throws IOException{
 		try{
