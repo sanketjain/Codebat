@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+
+public class MyFibonacci {
+ 
+    public static void main(String a[]){
+         Scanner reader = new Scanner(System.in); 
+         int febCount = reader.nextInt();
+
+         if(febCount!=0 && febCount!=1){
+             int[] feb = new int[febCount];
+             feb[0] = 0;
+             feb[1] = 1;
+             for(int i=2; i < febCount; i++){
+                 feb[i] = feb[i-1] + feb[i-2];
+             }
+     
+             for(int i=0; i< febCount; i++){
+                     System.out.print(feb[i] + " ");
+             }
+         } else {
+            System.out.println(febCount);
+         }
+
+    }
+}

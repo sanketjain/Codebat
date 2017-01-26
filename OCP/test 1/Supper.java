@@ -14,7 +14,8 @@ class Supper {
 		}
 	}
 
-	public static void main(String[] args){
+	//Adding throws to main method:
+	public static void main(String[] args) throws IOException{
 		eat();
 		System.out.println("4");
 	}
