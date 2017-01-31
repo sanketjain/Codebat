@@ -1,15 +1,65 @@
-public class SayNumber{
-	public static void main(String[] args){
-		int inputnumber = Integer.parseInt(args[0]);
-		if(inputnumber<0 || inputnumber>100){
-			System.out.println("Invalid entry");
-		} else {
-			String saystring = SayNumber.intToString(inputnumber);
-			System.out.println(saystring);
-//			for(int x=0; x<100; x++){ System.out.println(x + " " + SayNumber.intToString(x)); }
+import java.lang.Exception;
 
+public class SayNumber{
+	public static void main(String[] args) throws Exception{
+		
+		long takein = Long.parseLong(args[0]);
+		if (takein<1000000){
+			int inputnumber = Integer.parseInt(args[0]);
+			if (inputnumber<0){
+				throw new Exception("Only non negative values allowed");
+			} else if(inputnumber<1000){
+				SayNumber.lessthanthousand(inputnumber);
+			} else if(inputnumber<1000000){
+				SayNumber.lessthanmillion(inputnumber);
+			}
+		} else {
+			SayNumber.lessthanBillion(takein);
 		}
+		System.out.println();
 	}	
+
+	public static void lessthanBillion(long b){
+		int millionquotient = (int)(long) (b/1000);
+		int millionremainder = (int)(long) (b%1000);
+		SayNumber.lessthanthousand(millionquotient);
+		if(millionremainder==0){
+			System.out.print(" million");
+		} else {
+			System.out.print(" million, ");
+			SayNumber.lessthanthousand(millionremainder);
+		}
+	}
+
+	public static void lessthanmillion(int m){
+		int thousandsquotient = m/1000;
+		int thousandsremainder = m%1000;
+		SayNumber.lessthanthousand(thousandsquotient);
+		if(thousandsremainder==0){
+			System.out.print(" thousand");
+		} else {
+			System.out.print(" thousand, ");
+			SayNumber.lessthanthousand(thousandsremainder);
+		}
+	}
+
+	public static void lessthanthousand(int t){
+		if(t>=100 && t<1000){
+			System.out.print(SayNumber.hundredcall(t));
+		} else {
+			String xsmall= SayNumber.intToString(t);
+			System.out.print(xsmall);
+		}
+	}
+
+	public static String hundredcall(int inputnumber){
+		int hundredstring = inputnumber%100;
+		int hundredysaystring = inputnumber/100;
+		String saystring = SayNumber.intToString(hundredstring);
+		String sayhundred = SayNumber.intToString(hundredysaystring);
+		if(hundredstring==0){return (sayhundred + " hundred ");}
+		else {return (sayhundred + " hundred and " + saystring);}
+	}
 
 	public static String intToString(int intinput){
 		String[] firstword = new String[20];
@@ -56,7 +106,4 @@ public class SayNumber{
 		}
 	}
 }
-
-
-
 
