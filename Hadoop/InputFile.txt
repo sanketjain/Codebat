@@ -1,0 +1,11 @@
+REPLACE VIEW Customer AS LOCKING ROW FOR ACCESS SELECT * FROM ebay.Customer;
+REPLACE VIEW Customer AS LOCKING ROW FOR ACCESS SELECT * FROM Customer;
+REPLACE VIEW ebay.Customer AS LOCKING ROW FOR ACCESS SELECT * FROM ebay.Customer;
+REPLACE VIEW ebay.Customer AS LOCKING ROW FOR ACCESS SELECT * FROM ebay.Product;
+
+REPLACE VIEW ebay.Product AS LOCKING ROW FOR  ACCESS SELECT * FROM ebay.Product ;
+
+REPLACE VIEW amazon.product AS LOCKING ROW FOR ACCESS SELECT A.product_id, B.product_desc FROM amazon.Product A LEFT OUTER JOIN amazon.Order_detail B ON A.product_id = B.product_id;
+
+--------------------------------------------------------------------------------  REPLACE VIEW amazon.Order_Header AS LOCKING ROW FOR  ACCESS SELECT * FROM amazon.Order_Header;
+--------------------------------------------------------------------------------  REPLACE VIEW  Product AS LOCKING ROW FOR ACCESS SELECT * FROM amazon.Product;
