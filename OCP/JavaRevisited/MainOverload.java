@@ -4,6 +4,7 @@ public class MainOverload {
 	
 	public static void main(String[] args) { 
 		System.out.println("Inside main(String[] args) method ...."); 
+		MainOverload.main(new Integer[]{1, 2, 3});
 	} 
 	/** * An overloaded main method which accepts Integer[] instead of * String[] as argument. * @param args */ 
 	public static void main(Integer[] args){ 
