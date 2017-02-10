@@ -1,4 +1,5 @@
 public class ConstEx{
+	
 	public ConstEx(){
 		int firstint;
 	}
