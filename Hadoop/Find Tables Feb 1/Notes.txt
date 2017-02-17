@@ -1,0 +1,9 @@
+Given a file Input.txt which has queries like:
+REPLACE VIEW Customer AS LOCKING ROW FOR ACCESS SELECT * FROM ebay.Customer;
+REPLACE VIEW Customer AS LOCKING ROW FOR ACCESS SELECT * FROM Customer;
+REPLACE VIEW ebay.Customer AS LOCKING ROW FOR ACCESS SELECT * FROM ebay.Customer;
+
+To find the name of table and give the view list and tables contained in those list in form of arrays as:
+View List is [Customer, Customer, Customer, Customer, Product, product, Order_Header, Product]
+Table 1 is: [Customer, Customer, Customer, Product, Product, Product, Order_Header, Product]
+Table 2 is: [product_id]
