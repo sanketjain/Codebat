@@ -8,3 +8,15 @@ public class Chimpanzee extends Ape{
 		//Ape.
 	}
 }
+
+class Primate {
+	public Primate(){
+		System.out.println("Primate");
+	}
+}
+
+class Ape extends Primate {
+	public Ape(){
+		System.out.println("Ape");
+	}
+}
